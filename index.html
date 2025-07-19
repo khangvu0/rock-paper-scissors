@@ -1,70 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
-
 <body>
-    <header class="header">
-        <div class="title--div">
-            <h1 class="title">Rock Paper Scissors</h1>
+     <header class="header">
+        <div class="image-container">
+            <a href="index.html"><img src="images/R2H_banner.png" alt="Road to Hire logo"></a>
         </div>
+
+        <nav class="nav">
+            <ul class="nav--ul">
+                <li class="nav--li"><a href="https://github.com/khangvu0/rock-paper-scissors/tree/main">GitHub</a></li>
+            </ul>
+        </nav>
     </header>
-    
-    <main class="main">
+
+    <main>
+        <h1>Rock Paper Scissors</h1>
         <section class="what">
-            <h2 class="section--header">What is Rock Paper Scissors</h2>
-            <p class="section--paragraph"></p>
+            <details class="what-container">
+                <summary>What is Rock Paper Scissors?</summary>
+
+                <p>Rock Paper Scissors is a simple hand game usually played between two people.</p>
+                <p>Each player simultaneously forms one of three shapes with their hand</p>
+                <ul>
+                <li>Rock - a closed fist</li>
+                <li>Paper - an open hand</li>
+                <li>Scissors - index and middle fingers extended, forming a V</li>
+                </ul>
+                <p>
+                Rock Paper Scissors is often used as a quick decision-making game.
+                It's a fun, fast-paced way to challenge a friend or a computer!
+                </p>
+            </details>
         </section>
 
         <section class="how">
-            <h2 class="section--header">How to Play</h2>
-            <p class="section--paragraph"></p>
+            <details class="how-container">
+                <summary>How to play</summary>
+
+                <p>You will be playing against the computer.</p>
+                <p>You can choose between Rock, Paper, and Scissors.</p>
+
+                <p>Here are the rules to getting a point in the game:</p>
+                <ul>
+                <li>Rock beats Scissors</li>
+                <li>Scissors beats Paper</li>
+                <li>Paper beats Rock</li>
+                </ul>
+                <p>
+                If the player and computer choose the same option (ex. Rock and
+                Rock), then you tie.
+                </p>
+
+                <p>You can reset the game at the bottom.</p>
+            </details>
         </section>
 
         <section class="game">
-            <h2 class="section--header">Rock Paper Scissors</h2>
-
-            <div class="score--div"> 
-            <h3 class="section--subheader">Score</h3>
-                <div class="flex">
-                    <div class="human">
-                        <div class="score human-score"></div>
-                        <h3 class="name">Human</h3>
-                        <h4 class="human--decision"></h4>
-                    </div>
-                    <div class="computer">
-                        <div class="score computer-score"></div>
-                        <h3 class="name">Computer</h3>
-                        <h4 class="computer--decision"></h4>
-                    </div>
+            <h2>Rock Paper Scissors</h2>
+            <div class="choices">
+                <button data-choice="rock">🪨 Rock</button>
+                <button data-choice="paper">📄 Paper</button>
+                <button data-choice="scissors">✂️ Scissors</button>
                 </div>
-                <div class="score--result-container">
-                    <h2 class="score--result"></h2>
-                </div>
-                <div class="flex">
-                    <div id="controls">
-                        <button id="rock">Rock</button>
-                        <button id="paper">Paper</button>
-                        <button id="scissors">Scissors</button>
-                    </div>
-                    <div class="reset-container">
-                        <button id="reset">Reset</button>
-                    </div>
-                    <div class="counter">
-                        <h4 class="count"></h4>
-                    </div>
-                </div>
+                <div class="result">
+                <p id="user-choice"></p>
+                <p id="computer-choice"></p>
+                <h2 id="winner"></h2>
             </div>
         </section>
+
+        <section class="stats">
+            <p>Wins: <span id="wins">0</span></p>
+            <p>Losses: <span id="losses">0</span></p>
+            <p>Ties: <span id="ties">0</span></p>
+            <p>Total Games: <span id="total">0</span></p>
+            <button id="reset">Reset</button>
+        </section>
     </main>
-
-    <footer class="footer">
-
-    </footer>
 </body>
 </html>
