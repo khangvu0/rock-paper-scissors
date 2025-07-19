@@ -111,15 +111,30 @@ a:visited {
     margin-bottom: 1rem;
 }
 
+.choices {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .choices button {
     font-size: 1.2em;
     padding: 10px 20px;
     margin: 10px;
     cursor: pointer;
+    border: 1px solid var(--dark-blue);
+    border-radius: 4px;
+    color: var(--dark-blue);
+    min-width: 139px;
 }
 
 .result p, .result h2 {
     margin: 10px 0;
+}
+
+.stats p {
+    font-weight: bold;
 }
 
 #reset {
