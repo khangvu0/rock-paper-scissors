@@ -4,7 +4,7 @@ This is a repository for my take on the classic game Rock, Paper, Scissors. The 
 
 ## Live Demo
 
-You can view a live demo of the website [here](https://rock-paper-scissors-ruddy-nu.vercel.app/).
+You can view a live demo of the website [here](https://rock-paper-scissors-ruddy-nu.vercel.app/){:target="_blank"}.
 
 ## Technologies Used
 
@@ -18,7 +18,7 @@ You can view a live demo of the website [here](https://rock-paper-scissors-ruddy
 - Responsive Design – Layout adjusts smoothly across mobile, tablet, and desktop devices.
 - Real-Time Score Tracking – Win/Loss/Tie statistics are automatically updated after each round.
 - Reset Button – Clear all game stats and messages with one click.
-- Accessible Instructions – Game rules and description provided using semantic <details> elements.
+- Accessible Instructions – Game rules and description provided using semantic __details__ elements.
 - Modular Game Logic – Encapsulated game logic inside a single JavaScript object (game) for better structure and readability.
 - Emoji-enhanced UI – Buttons feature emojis to make gameplay more fun and intuitive.
 
@@ -33,7 +33,7 @@ I wanted to challenge myself to leverage JavaScript objects for this project. As
 - Using the data-* attribute in HTML and accessing it in JavaScript.
 - Making UI components responsive with CSS media queries.
 - Applying CSS properties like object-fit and object-position for image handling.
-- Utilizing the <details> and <summary> HTML tags for collapsible instructions.
+- Utilizing the __details__ and __summary__ HTML tags for collapsible instructions.
 
 ## Screenshot
 
