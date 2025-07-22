@@ -64,10 +64,9 @@ const game = {
         document.getElementById('computer-choice').textContent = '';
         document.getElementById('winner').textContent = '';
     }
-    };
+};
 
 
-    
 // Selects my Rock, Paper, and Scissors buttons with the attribute 'data-choice=_'
 document.querySelectorAll('button[data-choice]').forEach(button => {
     // For each of these buttons, add a click event listener
@@ -86,7 +85,8 @@ document.querySelectorAll('button[data-choice]').forEach(button => {
     });
 });
 
-    // Click event for reset button
-    document.getElementById('reset').addEventListener('click', () => {
+
+// Click event for reset button
+document.getElementById('reset').addEventListener('click', () => {
     game.resetStats();
 });
